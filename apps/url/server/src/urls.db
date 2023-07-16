@@ -1,0 +1,8 @@
+-- We need to create a table named "url" to replace our in-memory equivalent. It just has an id and the original URL.
+CREATE TABLE IF NOT EXISTS url (id INTEGER PRIMARY KEY AUTOINCREMENT, original TEXT);
+
+-- When we create a new URL we need to insert a record into the table. The ID will be generated automatically, so we only need the original URL.
+INSERT INTO url (original) VALUES (?);
+
+-- Finally, when retrieving a URL by its short ID, we need to select from the table matching that ID.
+SELECT original FROM url WHERE id = (?);
