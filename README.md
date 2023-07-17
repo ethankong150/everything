@@ -21,3 +21,12 @@ Links to Project `README.md`
 3. `yarn install`
 
 When adding new dependencies, use `yarn add` or its dev dependency equivalent. Thanks to Nx, each package will only be installed once, and each app knows how to bundle itself correctly based on its dependencies.
+
+# Modification made to repo:
+1. Added QRcodes when requesting for URL shortening
+
+# Changes I would make to improve the quality of the codebase
+1. Input validation - ensure that inputs given are working/valid websites
+2. Organization of files (ex: a components folder, assuming that website is going to utilize more visual components instead of the current blank slate)
+3. Better documentation of code - ex: README, Comments on code,  etc.
+
